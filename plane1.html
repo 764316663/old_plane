@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>飞机大战</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="reset.css" rel="stylesheet" type="text/css" />
+<link href="plane1.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="start-bg-image">
+	<div id="plane-text">飞机大战</div>
+    <div id="start-button">
+    	<div id="start-game1" onclick="start_game1()">
+    		<div class="start-game-cupimg"></div>
+    	    <div class="start-game-text">开始游戏</div>
+    	</div>
+    	<div id="start-game2" onclick="nandu()">
+    		<div class="start-game-cupimg"></div>
+    	    <div class="start-game-text">选择难度</div>
+    	</div>
+    </div>
+	<div id="bottom">
+		<button onclick="start_game1()">难度一</button>
+    	<button onclick="start_game2()">难度二</button>
+    	<button onclick="start_game3()">难度三</button>
+        <button onclick="start_game4()">成长难度</button>
+	</div>
+</div>
+<div id="gamespace">
+	<div id="pasue">
+    	 <div id="game-over">
+         	<div id="over-text">游戏结束</div>
+            <div id="over-scores">您最后的分数是：</div>
+            <div id="game-scores">0</div>
+            <div id="start-game3" onclick="f5()">
+    			<div class="start-game-cupimg"></div>
+    	    	<div class="start-game-text">再来一次</div>
+    	 	</div>
+         </div>
+    </div>
+</div>
+<div id="text">
+	空格键暂停/继续&nbsp;b键使用炸弹消灭屏幕上所有敌机&nbsp;v键切换子弹类型&nbsp;d键暂停/继续播放音乐&nbsp;f键查看成长提醒<br /><label>剩余炸弹数量：</label><label id="boom-label">10</label>&nbsp;<label>分数：</label><label id="game-label">0</label>
+</div>
+<audio id="bgm1" src="music/Linkin Park - In The End.mp3" loop></audio>
+</body>
+
+</html>
+<script language="javascript" src="plane1.js"></script>
